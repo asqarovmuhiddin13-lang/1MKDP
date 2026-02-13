@@ -19,15 +19,15 @@ let rasmlar = ["rus1.jpg","rus2.jpg","rus3.jpg"];
 let i = 0;
 
 function keyingi(){
-i++;
-if(i>=rasmlar.length) i=0;
-document.getElementById("slider").src=rasmlar[i];
+    i++;
+    if(i>=rasmlar.length) i=0;
+    document.getElementById("slider").src=rasmlar[i];
 }
 
 function oldingi(){
-i--;
-if(i<0) i=rasmlar.length-1;
-document.getElementById("slider").src=rasmlar[i];
+    i--;
+    if(i<0) i=rasmlar.length-1;
+    document.getElementById("slider").src=rasmlar[i];
 }
 </script>
 
