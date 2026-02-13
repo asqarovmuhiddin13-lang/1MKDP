@@ -9,25 +9,25 @@
 
 <h1>🇺🇿 O‘zbek Rasmlar</h1>
 
-<img id="slider" src="ўзб1.jpg" style="width:300px;"><br><br>
+<img id="slider" src="uzb1.jpg" style="width:300px;"><br><br>
 
 <button onclick="oldingi()">⬅ Oldingi</button>
 <button onclick="keyingi()">Keyingi ➡</button>
 
 <script>
-let rasmlar = ["ўзб1.jpg","ўзб2.jpg","ўзб3.jpg"];
+let rasmlar = ["uzb1.jpg","uzb2.jpg","uzb3.jpg"];
 let i = 0;
 
 function keyingi(){
-i++;
-if(i>=rasmlar.length) i=0;
-document.getElementById("slider").src=rasmlar[i];
+    i++;
+    if(i>=rasmlar.length) i=0;
+    document.getElementById("slider").src=rasmlar[i];
 }
 
 function oldingi(){
-i--;
-if(i<0) i=rasmlar.length-1;
-document.getElementById("slider").src=rasmlar[i];
+    i--;
+    if(i<0) i=rasmlar.length-1;
+    document.getElementById("slider").src=rasmlar[i];
 }
 </script>
 
