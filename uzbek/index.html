@@ -2,15 +2,22 @@
 <html lang="uz">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>O‘zbek Rasmlar va Matn</title>
+<style>
+body { text-align:center; font-family:Arial; margin:20px; }
+#slider { width:90%; max-width:400px; margin-top:20px; height:auto; }
+button { font-size:1em; padding:8px 12px; margin:5px; }
+h2 { margin-top:20px; }
+</style>
 </head>
-
-<body style="text-align:center; font-family:Arial; margin-top:20px;">
+<body>
 
 <h2>🇺🇿 Bemorning huquq va majburiyatlari</h2>
 
-<img id="slider" src="uzb1.jpg" style="width:300px; margin-top:20px;"><br><br>
+<img id="slider" src="uzb1.jpg" alt="rasm">
 
+<br><br>
 <button onclick="oldingi()">⬅ Oldingi</button>
 <button onclick="keyingi()">Keyingi ➡</button>
 
@@ -21,13 +28,13 @@ let i = 0;
 function keyingi(){
     i++;
     if(i>=rasmlar.length) i=0;
-    document.getElementById("slider").src=rasmlar[i];
+    document.getElementById("slider").src = rasmlar[i];
 }
 
 function oldingi(){
     i--;
     if(i<0) i=rasmlar.length-1;
-    document.getElementById("slider").src=rasmlar[i];
+    document.getElementById("slider").src = rasmlar[i];
 }
 </script>
 
