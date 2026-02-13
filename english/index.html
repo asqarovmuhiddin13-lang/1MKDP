@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Choose Language</title>
+<meta charset="UTF-8">
+<title>English Images</title>
 </head>
-<body style="text-align:center; font-family:sans-serif;">
-    <h1>Choose Your Language / Tilni tanlang / Выберите язык</h1>
 
-    <a href="uzbek/"><span style="font-size:2em;">🇺🇿 O‘zbek</span></a><br><br>
-    <a href="russian/"><span style="font-size:2em;">🇷🇺 Русский</span></a><br><br>
-    <a href="english/"><span style="font-size:2em;">🇬🇧 English</span></a>
+<body style="text-align:center; font-family:Arial;">
+
+<h1>🇬🇧 English Images</h1>
+
+<img id="slider" src="ingliz1.jpg" style="width:300px;"><br><br>
+
+<button onclick="oldingi()">⬅ Prev</button>
+<button onclick="keyingi()">Next ➡</button>
+
+<script>
+let rasmlar = ["ingliz1.jpg","ingliz2.jpg"];
+let i = 0;
+
+function keyingi(){
+i++;
+if(i>=rasmlar.length) i=0;
+document.getElementById("slider").src=rasmlar[i];
+}
+
+function oldingi(){
+i--;
+if(i<0) i=rasmlar.length-1;
+document.getElementById("slider").src=rasmlar[i];
+}
+</script>
+
 </body>
 </html>
