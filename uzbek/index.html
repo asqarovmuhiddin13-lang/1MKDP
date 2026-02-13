@@ -5,19 +5,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>O‘zbek Rasmlar va Matn</title>
 <style>
-body { text-align:center; font-family:Arial; margin:20px; }
-#slider { width:90%; max-width:400px; margin-top:20px; height:auto; }
-button { font-size:1em; padding:8px 12px; margin:5px; }
-h2 { margin-top:20px; }
+body {
+    text-align:center;
+    font-family: Arial, sans-serif;
+    margin:20px;
+}
+
+h2 {
+    margin-top:20px;
+}
+
+/* Logotip */
+img.logo {
+    width:30%;          /* ekranga moslashadi */
+    max-width:150px;
+    height:auto;
+    margin-bottom:20px;
+}
+
+/* Slayd rasm */
+#slider {
+    width:90%;
+    max-width:400px;
+    height:auto;
+    margin-top:20px;
+}
+
+/* Tugmalar */
+button {
+    font-size:1em;
+    padding:8px 12px;
+    margin:5px;
+}
 </style>
 </head>
 <body>
 
+<!-- Logotip -->
+<img src="../logo.png" alt="Logotip" class="logo">
+
+<!-- Yuqoridagi matn -->
 <h2>🇺🇿 Bemorning huquq va majburiyatlari</h2>
 
+<!-- Slayd rasm -->
 <img id="slider" src="uzb1.jpg" alt="rasm">
 
 <br><br>
+
+<!-- Tugmalar -->
 <button onclick="oldingi()">⬅ Oldingi</button>
 <button onclick="keyingi()">Keyingi ➡</button>
 
