@@ -1,35 +1,23 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>O‘zbek Rasmlar</title>
+<title>Til tanlash</title>
 </head>
 
 <body style="text-align:center; font-family:Arial;">
 
-<h1>🇺🇿 O‘zbek Rasmlar</h1>
+<h1>🌐 Tilni tanlang</h1>
 
-<img id="slider" src="ўзб1.jpg" style="width:300px;"><br><br>
+<br><br>
 
-<button onclick="oldingi()">⬅ Oldingi</button>
-<button onclick="keyingi()">Keyingi ➡</button>
+<a href="uzbek/">🇺🇿 O‘zbek</a>
+<br><br>
 
-<script>
-let rasmlar = ["ўзб1.jpg","ўзб2.jpg","ўзб3.jpg"];
-let i = 0;
+<a href="russian/">🇷🇺 Русский</a>
+<br><br>
 
-function keyingi(){
-i++;
-if(i>=rasmlar.length) i=0;
-document.getElementById("slider").src=rasmlar[i];
-}
-
-function oldingi(){
-i--;
-if(i<0) i=rasmlar.length-1;
-document.getElementById("slider").src=rasmlar[i];
-}
-</script>
+<a href="english/">🇬🇧 English</a>
 
 </body>
 </html>
