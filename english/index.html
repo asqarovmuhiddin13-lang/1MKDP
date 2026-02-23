@@ -3,39 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>English Images and Text</title>
+<title>Patient Rights and Responsibilities</title>
+
 <style>
-body { text-align:center; font-family:Arial; margin:20px; }
-#slider { width:90%; max-width:400px; margin-top:20px; height:auto; }
-button { font-size:1em; padding:8px 12px; margin:5px; }
-h2 { margin-top:20px; }
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background: #f7f9fc;
+    }
+
+    h2 {
+        margin-top: 20px;
+    }
+
+    #slider {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 14px;
+        margin: 10px 5px;
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        background: #007bff;
+        color: #fff;
+    }
+
+    button:hover {
+        background: #0056b3;
+    }
 </style>
 </head>
 <body>
 
 <h2>🇬🇧 Patient Rights and Responsibilities</h2>
 
-<img id="slider" src="eng1.jpg" alt="rasm">
+<img id="slider" src="eng1.jpg" alt="Patient information image">
 
-<br><br>
+<br>
+
 <button onclick="oldingi()">⬅ Prev</button>
 <button onclick="keyingi()">Next ➡</button>
 
 <script>
-let rasmlar = ["eng1.jpg","eng2.jpg"];
-let i = 0;
+    let rasmlar = [
+        "eng1.jpg",
+        "eng2.jpg",
+        "eng3.jpg"
+    ];
 
-function keyingi(){
-    i++;
-    if(i>=rasmlar.length) i=0;
-    document.getElementById("slider").src = rasmlar[i];
-}
+    let i = 0;
 
-function oldingi(){
-    i--;
-    if(i<0) i=rasmlar.length-1;
-    document.getElementById("slider").src = rasmlar[i];
-}
+    function keyingi() {
+        i++;
+        if (i >= rasmlar.length) {
+            i = 0;
+        }
+        document.getElementById("slider").src = rasmlar[i];
+    }
+
+    function oldingi() {
+        i--;
+        if (i < 0) {
+            i = rasmlar.length - 1;
+        }
+        document.getElementById("slider").src = rasmlar[i];
+    }
 </script>
 
 </body>
